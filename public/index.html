@@ -13,7 +13,7 @@
     <script src="backendsystem/uv.bundle.js" defer></script>
     <script src="backendsystem/uv.config.js" defer></script>
 </head>
-<body>
+<body style="overflow:hidden;">
     <nav class="navbar">
         <a href="/" style="text-decoration: none;color:whitesmoke;" class="logo"><img src="images/astro.png" width="50px" alt="logo"></a>
         <ul class="nav-links">
@@ -37,14 +37,73 @@
                 <p id="time-text">...</p>
               </div>
     <form id="uv-form">
-        <input id="uv-address" type="text" placeholder="Search the web" class="search" autocomplete="off"/>
+        <input id="uv-address" id="inputField" type="text" placeholder="Search the web" class="search" autocomplete="off" oninput="checkAndUpdateIcon(this.value)"/>
       </form>
+      <script>
+        const inputField = document.getElementById('inputField');
+        const icon = document.getElementById('icon');
+    
+        inputField.addEventListener('input', () => {
+            if (inputField.value.startsWith('https://')) {
+                icon.classList.remove('fas', 'fa-search');
+                icon.classList.add('fa-solid', 'fa-earth-americas');
+            } else {
+                icon.classList.remove('fa-solid', 'fa-earth-americas');
+                icon.classList.add('fas', 'fa-search');
+            }
+        });
+    </script>
       <br>
       <br>
       <span id="subtitle">da subtitle is loading...</span></h2>
     </div>
     </div>
 </div>
+<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+    .path-0{
+      animation:pathAnim-0 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes pathAnim-0{
+      0%{
+        d: path("M 0,600 L 0,150 C 143.7333333333333,129.06666666666666 287.4666666666666,108.13333333333335 445,135 C 602.5333333333334,161.86666666666665 773.8666666666668,236.5333333333333 942,272 C 1110.1333333333332,307.4666666666667 1275.0666666666666,303.73333333333335 1440,300 L 1440,600 L 0,600 Z");
+      }
+      25%{
+        d: path("M 0,600 L 0,150 C 183.06666666666666,179.86666666666667 366.1333333333333,209.73333333333332 516,220 C 665.8666666666667,230.26666666666668 782.5333333333333,220.93333333333334 931,231 C 1079.4666666666667,241.06666666666666 1259.7333333333333,270.5333333333333 1440,300 L 1440,600 L 0,600 Z");
+      }
+      50%{
+        d: path("M 0,600 L 0,150 C 182.93333333333334,127.73333333333333 365.8666666666667,105.46666666666667 528,135 C 690.1333333333333,164.53333333333333 831.4666666666667,245.86666666666667 980,282 C 1128.5333333333333,318.1333333333333 1284.2666666666667,309.06666666666666 1440,300 L 1440,600 L 0,600 Z");
+      }
+      75%{
+        d: path("M 0,600 L 0,150 C 148.93333333333334,131.06666666666666 297.8666666666667,112.13333333333335 457,121 C 616.1333333333333,129.86666666666665 785.4666666666667,166.53333333333333 951,201 C 1116.5333333333333,235.46666666666667 1278.2666666666667,267.73333333333335 1440,300 L 1440,600 L 0,600 Z");
+      }
+      100%{
+        d: path("M 0,600 L 0,150 C 143.7333333333333,129.06666666666666 287.4666666666666,108.13333333333335 445,135 C 602.5333333333334,161.86666666666665 773.8666666666668,236.5333333333333 942,272 C 1110.1333333333332,307.4666666666667 1275.0666666666666,303.73333333333335 1440,300 L 1440,600 L 0,600 Z");
+      }
+    }</style><path d="M 0,600 L 0,150 C 143.7333333333333,129.06666666666666 287.4666666666666,108.13333333333335 445,135 C 602.5333333333334,161.86666666666665 773.8666666666668,236.5333333333333 942,272 C 1110.1333333333332,307.4666666666667 1275.0666666666666,303.73333333333335 1440,300 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#9900ef" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
+    .path-1{
+      animation:pathAnim-1 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes pathAnim-1{
+      0%{
+        d: path("M 0,600 L 0,350 C 107.33333333333331,300.4 214.66666666666663,250.8 398,281 C 581.3333333333334,311.2 840.6666666666667,421.20000000000005 1027,471 C 1213.3333333333333,520.8 1326.6666666666665,510.4 1440,500 L 1440,600 L 0,600 Z");
+      }
+      25%{
+        d: path("M 0,600 L 0,350 C 188.93333333333334,373.20000000000005 377.8666666666667,396.40000000000003 513,391 C 648.1333333333333,385.59999999999997 729.4666666666667,351.6 875,365 C 1020.5333333333333,378.4 1230.2666666666667,439.2 1440,500 L 1440,600 L 0,600 Z");
+      }
+      50%{
+        d: path("M 0,600 L 0,350 C 199.2,320.26666666666665 398.4,290.53333333333336 558,319 C 717.6,347.46666666666664 837.5999999999999,434.1333333333333 978,474 C 1118.4,513.8666666666667 1279.2,506.93333333333334 1440,500 L 1440,600 L 0,600 Z");
+      }
+      75%{
+        d: path("M 0,600 L 0,350 C 193.7333333333333,335.73333333333335 387.4666666666666,321.46666666666664 556,342 C 724.5333333333334,362.53333333333336 867.8666666666668,417.8666666666667 1011,450 C 1154.1333333333332,482.1333333333333 1297.0666666666666,491.06666666666666 1440,500 L 1440,600 L 0,600 Z");
+      }
+      100%{
+        d: path("M 0,600 L 0,350 C 107.33333333333331,300.4 214.66666666666663,250.8 398,281 C 581.3333333333334,311.2 840.6666666666667,421.20000000000005 1027,471 C 1213.3333333333333,520.8 1326.6666666666665,510.4 1440,500 L 1440,600 L 0,600 Z");
+      }
+    }</style><path d="M 0,600 L 0,350 C 107.33333333333331,300.4 214.66666666666663,250.8 398,281 C 581.3333333333334,311.2 840.6666666666667,421.20000000000005 1027,471 C 1213.3333333333333,520.8 1326.6666666666665,510.4 1440,500 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="#9900ef" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
       <script src="js/mathhelp/search.js" defer></script>
       <script src="js/mathhelp/index.js" defer></script>
       <script src="js/general-scripts/time.js" defer></script>

@@ -57,7 +57,7 @@ transform:scale(1.1);
 
 input {
   width: 200px;
-  height:30px;
+  height:35px;
   box-shadow: 0 0 20px black;
   outline:none;
   border-radius:10px;
@@ -81,7 +81,7 @@ input::placeholder {
   margin-bottom: 20px;
   box-shadow: 0 0 10px violet;
 	width: 200px;
-  height:150px;
+  height:170px;
   justify-content: center;
   transition:0.7s;
 }

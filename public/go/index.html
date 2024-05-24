@@ -7,6 +7,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <link rel="shortcut icon" id="dynamic-favicon" href="https://ssl.gstatic.com/classroom/favicon.png" />
     <title id="dynamic-title">Home</title>
+    <script src="https://kit.fontawesome.com/52676eb1e5.js" crossorigin="anonymous"></script>
     <script src="/baremux/bare.cjs" defer></script>
     <script src="/epoxy/index.js" defer></script>
     
@@ -40,11 +41,11 @@
         justify-content:center;
     background: #351E4F;
     font-family: 'Be Vietnam Pro', sans-serif;
-    height: 48px;
+    height: 30px;
     border: 1px solid #68419b;
     outline: none;
     width: 500px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #FFF;
         text-align: center;
 }
@@ -65,7 +66,7 @@ form input:focus {
         border-radius: 40px;
         width: 50px;
         height: 50px;
-        background-color: purple;
+        background-color: transparent;
         border: none;
         position: fixed;
         top: 10px;
@@ -120,7 +121,7 @@ form input:focus {
         <button onclick="reload()" class="navbtn navbtn1">
             <i class="fa-solid fa-rotate-right"></i>
           </button>
-          <button id="home-page" class="navbtn navbtn2" onclick="location.href='/'">
+          <button id="home-page" class="navbtn navbtn2" onclick="window.location.href='/'">
             <i class="fa-solid fa-house"></i>
           </button>
           <button id="fullscreen-button" onclick="toggleFullscreen()" class="navbtn navbtn3">
@@ -133,7 +134,7 @@ form input:focus {
             <i class="fa-solid fa-chevron-right"></i>
           </button>
          <button id="back" onclick="goBack()" class="navbtn navbtn6">
-           <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-left"></i>
           </button>
     <script>
       function reload() {
@@ -164,7 +165,7 @@ form input:focus {
       }
       const homeButton = document.getElementById('home-page')
       homeButton.addEventListener('click', function () {
-        window.location.href = './'
+        window.location.href = '/'
       })
       window.onload = function () {
         let encodedUrl = sessionStorage.getItem('ur')
