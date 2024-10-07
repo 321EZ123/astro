@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <script type='text/javascript' src='//banddisordergraceless.com/ce/75/76/ce7576defa8dc3d82887bd1c1f84ac65.js'></script>
 <head>
 <!-- DO NOT REMOVE -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG6GP8E17T"></script>
@@ -11,9 +10,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-FG6GP8E17T');
-</script>
-<script>
-  alert("if the game doesn't show up, try scrolling down.")
 </script>
 <!--DO NOT REMOVE-->
 <script src="/js/general-scripts/themes.js" defer></script>
@@ -31,7 +27,8 @@
 	<link rel="shortcut icon" id="favicon" href="/images/astro.png" />
   <script type='text/javascript' src='//banddisordergraceless.com/ce/75/76/ce7576defa8dc3d82887bd1c1f84ac65.js'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://kit.fontawesome.com/52676eb1e5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     @import url('/css/main.css');
@@ -44,24 +41,6 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-    }
-
-    .back-button {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background-color: yellow;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-size: 1.2rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-
-    .back-button:hover {
-      background-color: yellow;
     }
 
   #game-container {
@@ -80,102 +59,6 @@
   margin-bottom: 0px;
 }
 
-#server-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#server-buttons a {
-  display: block;
-  position: relative;
-  top: 0;
-  margin: 0 10px;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #EFEFEF;
-  background-color: #DD4A68;
-  transition: background-color 0.3s ease;
-}
-
-#server-buttons a:hover {
-  background-color: #FF6B88;
-}
-
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1f1f1f;
-    z-index: 9999;
-    user-select: none;
-}
-
-#loader.hide {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#loader h1 {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 7vw;
-    font-weight: 700;
-    text-align: center;
-}
-
-#loader h1 span {
-    color: #ff0006;
-}
-
-#loader p {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 1.2vw;
-    font-weight: 500;
-    text-align: center;
-}
-
-#loader .loader {
-    position: absolute;
-    top:63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6vw;
-    height:6vw;
-    border-radius: 50%;
-    border: 10px solid #fff;
-    border-top-color: #941417;
-    animation: loader 1s linear infinite;
-}
-
-@keyframes loader {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
 .menu {
   right:0;
   left:0;
@@ -237,11 +120,4 @@ iframe {
     document.getElementById('gameFramey').src = '/algebra/src/' + src
   </script>
 </body>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
-  }
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>

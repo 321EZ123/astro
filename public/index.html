@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	    <script type='text/javascript' src='//banddisordergraceless.com/ce/75/76/ce7576defa8dc3d82887bd1c1f84ac65.js'></script>
 <head>
 <!-- DO NOT REMOVE -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG6GP8E17T"></script>
@@ -27,9 +26,6 @@
     margin:10px;
   }
 </style>
-<script>
-  alert('Astro V7 was released, check the update log by scrolling down.')
-</script>
 <!--DO NOT REMOVE-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +48,6 @@
 <script src="/js/settings/autoab.js" defer></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-<script src="https://kit.fontawesome.com/52676eb1e5.js" crossorigin="anonymous"></script>
 </head>
 <body theme="main">
     <nav class="navbar">
@@ -60,7 +55,7 @@
         <ul class="nav-links">
             <li><a href="algebra"><i class="fa-solid fa-gamepad"></i> Games</a></li>
             <li><a href="circumfrence"><i class="fa-solid fa-headphones-simple"></i> Apps</a></li>
-            <li><a href="learning"><i class="fa-sharp fa-solid fa-folder-open"></i> Tools</a></li>
+            <li><a href="learning"><i class="fa-solid fa-folder-open"></i> Tools</a></li>
             <li><a href="radius"><i class="fa-solid fa-user-gear"></i> Settings</a></li>
             <li><a style="color:white;" href="//dsc.gg/gnetwork" class="nav-item">
                 <i class="fa-brands fa-discord"></i>
@@ -81,16 +76,15 @@
   <br>
   <br>
   <center class="centerr">
- <h1 style="font-weight: 500;font-size:50px;text-shadow:0px 15px 50px rgba(35, 75, 139, 0.1);">Unblocking, at your fingertips.</h1>
+ <h1 style="font-weight: 500;font-size:50px;text-shadow:0px 15px 50px rgba(35, 75, 139, 0.1);" id="subtitle"></h1>
  <h2>Join hundreds and thousands enjoying their time on Astro.</h2>
  <button onclick="scrollToSection('uv-address');">Search Now!</button>
  <br>
  <br>
  <center>
   <div align="center" class="containerzz" style="width:600px;">
-    <h2>Update Log 7.0.5</h2>
-    <li>Fixed out some bugs.</li>
-    <li>Fixed roblox and other now.gg apps (thanks frogiesarcade)</li>
+    <h2>Update Log 7.0.8</h2>
+<li>Attempt to fix site speeds.</li>
   </div> 
  </center>
  <br>
@@ -159,11 +153,6 @@
       <script src="js/general-scripts/time.js" defer></script>
       <script src="js/general-scripts/sub.js" defer></script>
       <script src="js/general-scripts/themes.js" defer></script>
-      <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
-        }
-      </script>
 <script>
   setTimeout(() => {
       document.querySelector('.ad-container').classList.add('fade-out');
@@ -179,6 +168,40 @@
             });
         }
 </script>
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+      // script to generate random greetings
+
+      function changeSub(num) {
+        document.getElementById("subtitle").innerText = say[num];
+      }
+      
+      
+      var say = [];
+      say[0] = "Unblocking, At your fingertips.";
+      say[1] = "Get to gaming on astro!";
+      say[2] = "Watch your favorite movies, on astro.";
+      say[3] = "Use everyday apps on astro.";
+      say[4] = "Use helpful tools, on astro.";
+      say[5] = "Get cheats on astro.";
+      say[6] = "Complete major assignments on astro.";
+      say[7] = "Be free of filters, on astro.";
+      say[8] = "Search anonymously, on astro."
+      
+      
+      // pick a random greeting
+      var howmany = say.length;
+      var bRand = 0;
+      bRand = Math.random();
+      bRand = Math.floor(bRand * howmany);
+      sayWhat = say[bRand];
+      document.getElementById("subtitle").innerText = sayWhat;
+      
+      function changeSplash(num) {
+        document.getElementById("subtitle").innerText = say[num];
+        var ret = "Set current splash to splash " + num + ", " + say[num];
+        return ret;
+      }
+      // credit to 3kh0 for the code :)
+</script>
 </body>
 </html>

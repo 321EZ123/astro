@@ -1,7 +1,12 @@
 [
     {
+        "img": "/circumfrence/img/heartive-movies.png",
+        "title": "🔥 Heartive Movies",
+        "clickFunction": "goto('https://heartive.pages.dev');"
+    },
+    {
     "img": "/circumfrence/img/discord.webp",
-    "title": "Discord",
+    "title": "🔥 Discord",
     "clickFunction": "goto('https://renderisgay.onrender.com/apps/discord-inc-/1430/discord-talk-chat-hang-out.html?app_pkg=com.roblox.client&partner=gamenora');"
 },
 {
@@ -16,12 +21,12 @@
 },
 {
     "img": "/circumfrence/img/hianime.webp",
-    "title": "HiAnime",
+    "title": "🔥 HiAnime",
     "clickFunction": "goto('https://hianime.to');"
 },
 {
     "img": "/circumfrence/img/nunflix.png",
-    "title": "Nunflix",
+    "title": "🔥 Nunflix",
     "clickFunction": "goto('https://nunflix.com');"
 },
 {
@@ -41,7 +46,7 @@
 },
 {
     "img": "/circumfrence/img/aptoide.png",
-    "title": "Aptoide",
+    "title": "🔥 Aptoide",
     "clickFunction": "goto('https://renderisgay.onrender.com/apps/aptoide/5874/aptoide-2.html?utm_source=now.gg-partner&utm_medium=bot&utm_campaign=carl');"
 },
 {
@@ -86,12 +91,12 @@
 },
 {
     "img": "/circumfrence/img/nowggnl.png",
-    "title": "Now.gg Vyper Group Byp*ss",
+    "title": "🔥 Now.gg Vyper Group Byp*ss",
     "clickFunction": "goto('https://nowgg.nl');"
 },
 {
     "img": "/circumfrence/img/ig.webp",
-    "title": "InstaGram",
+    "title": "🔥 InstaGram",
     "clickFunction": "goto('https://renderisgay.onrender.com/apps/instagram/1228/instagram.html?app_pkg=com.roblox.client&partner=gamenora');"
 },
 {
