@@ -41,6 +41,9 @@ As of January 1st, 2024, Replit is [no longer free](https://blog.replit.com/host
 - <a href="//github.com/bachwebsite">Bach - css</a>
 - <a href="//github.com/woofplayz">WoofPlayz - CSS and JS and ironing out bugs.</a>
 - <a href="//github.com/plexileNetwork">Clipped - Clickoff cloak and tabclose code.</a>
+- <a href="//github.com/Thedogecraft">Doge - JSON Bug fixes.</a>
+- <a href="//billigerhost.com">Billigerhost - Providing VPS Server</a>
+- <a href="//github.com/JustJxrdanWasDefinetlyTaken">Jordan - The site and everything else.</a>
 
 <h1 align="center">Contributors</h1>
 <h2 align="center">Thanks to these people for contributing!</h2>
