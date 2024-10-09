@@ -30,6 +30,10 @@ As of January 1st, 2024, Replit is [no longer free](https://blog.replit.com/host
 `cd astro`  
 `node index.js`
 
+## Updating Astro
+`cd astro`  
+`git pull --force --allow-unrelated-histories`  
+
 # Credits
 
 - <a href="//github.com/titaniumnetwork-dev/Ultraviolet">Titanium Network - Ultraviolet Proxy</a>
