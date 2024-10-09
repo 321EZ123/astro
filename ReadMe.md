@@ -26,9 +26,10 @@ As of January 1st, 2024, Replit is [no longer free](https://blog.replit.com/host
 # Server Deployments
 > to set up astro, you'll need to do this:
 
-`git clone https://github.com/galacticnetwork/astro`
-`cd astro`
-`node index.js`
+`git clone https://github.com/AbyssServices/Abyss-Web`  
+`cd Abyss-Web`  
+`npm install`  
+`npm start`
 
 # Credits
 
