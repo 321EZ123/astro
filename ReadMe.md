@@ -16,7 +16,6 @@
 
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/galacticnetwork/astro)
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/galacticnetwork/astro&branch=main&name=astro)
-[![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/galacticnetwork/astro)
 <a target="_blank" href="https://adaptable.io/app/deploy/new?gitUrl=https://github.com/galacticnetwork/astro"><img alt="Deploy to Adaptable" width="185px" style="border-radius:5px;" src="https://raw.githubusercontent.com/GalacticNetwork/astro/main/adapta.png"></a>
 <a target="_blank" href="https://docs.galacticnetwork.org/#replit"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
 
