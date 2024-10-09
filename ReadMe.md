@@ -23,10 +23,12 @@
 
 As of January 1st, 2024, Replit is [no longer free](https://blog.replit.com/hosting-changes), and heroku now has a web-proxy ban.
 
-# SaaS Deployments
-> to set up astro, you'll need to run
-`npm i && node index.js`
-and your done!
+# Server Deployments
+> to set up astro, you'll need to do this:
+
+`git clone https://github.com/galacticnetwork/astro
+cd astro
+node index.js`
 
 # Credits
 
