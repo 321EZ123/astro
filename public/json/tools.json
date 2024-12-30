@@ -7,7 +7,7 @@
     {
         "img": "/learning/img/chatgpt.jpeg",
         "title": "🔥 ChatGPT",
-        "clickFunction": "goto('https://chatgptdemo.info/chat/');"
+        "clickFunction": "goto('https://jordansmath.work/history/src/AI/');"
     },
     {
         "img": "/learning/img/soundboard.jpg",

@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
 <script src="/baremux/bare.cjs" defer></script>
 <script src="/epoxy/index.js" defer></script>
 <script src="/js/settings/hotkey.js" defer></script>
-<link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" id="favicon" href="images/astro.png" />
     <link rel="shortcut icon" id="favicon" href="images/astro.png" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
@@ -50,11 +49,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         body {
           background: #222;
+          color: white;
         }
         .bar {
           width:100%;
           position:fixed;
-         background:var(--navbar);
+         background:var(--navbar, #29262654);
          align-items:center;
          justify-content:center;
         }
@@ -69,7 +69,8 @@ document.addEventListener("DOMContentLoaded", function() {
             padding:1px;
             right:10px;
             position:relative;
-            margin-top:2px;
+            margin-top:4px;
+            top:2%;
         }
         .bar form input::placeholder {
             padding:1px;
@@ -108,14 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
             font-size:20px;
         }
 
-    #closeBtn {
-  cursor: pointer;
-  left: 15px;
-  top: 15px;
-  position: fixed;
-  margin: 0;
-  width:25px;
-}
 
 #logo {
   cursor: pointer;
@@ -153,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
     border:1px solid var(--secondary-accent);
     width:140px;
     height:50px;
-    background:var(--btn-accent);
+    background:var(--btn-accent, #222);
     text-decoration: none;
     color:var(--text);
     border-radius:10px;
@@ -161,10 +154,6 @@ document.addEventListener("DOMContentLoaded", function() {
     transition:0.3s;
 }
 
-.button:hover {
-    background-color:#222;
-    transform:scale(1.1);
-}
 iframe {
         display: block;
         background: var(--secondary-accent);

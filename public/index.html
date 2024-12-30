@@ -15,15 +15,18 @@
 </script>
 <style>
   .containerzz {
-    background:var(--accent);
-    overflow-y:auto;
     max-height: 400px;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 10px;
     box-sizing: border-box;
     border: none;
-    border-radius:10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 230px;
+  transition: all 0.3s ease;
   }
   .containerz li {
     margin:10px;
@@ -86,52 +89,55 @@
  <br>
  <center>
   <div align="center" class="containerzz" style="width:600px;">
-    <h2>Update Log 7.0.8</h2>
-<li>Attempt to fix site speeds.</li>
+    <h2>Update Log 7.1</h2>
+<li>Massive UI Cleanup</li>
+<li>ChatGPT Fixed</li>
   </div> 
  </center>
  <br>
  <div style="display:flex;flex-wrap:wrap;gap:5px;align-items: center;justify-content: center;background-color:var(--accent)">
-  <div align="center" class="containerz">
-    <h2>How do I host astro myself?</h2>
-    <h3>Look at <a href="//docs.galacticnetwork.org" style="color:white;">GN Docs</a> or go to <a href="//github.com/galacticnetwork/astro" style="color:white;">Astro's Github.</a></h3>
-  </div> 
-  <div align="center" class="containerz">
-    <h2>What is a proxy?</h2>
-    <h3>A web proxy allows users to browse the internet anonymously by acting as an intermediary between their device and the websites they visit.</h3>
-  </div>
-  <div align="center" class="containerz">
-    <h2>How can I contribute to this project?</h2>
-    <h3 style="text-decoration: underline;color:lightgray;">Telling people about astro works, but to really contribute if you love astro, and want private links, join the <a href="//dsc.gg/gnetwork" style="color: white;">Discord</a> and boost the server, or join the discord and cashapp <a style="color:white;">$tether83</a> and post it in media!</h3>
+    <div align="center" class="containerz">
+      <i class="fa-solid fa-globe fa-3x"></i>
+      <h3>Unrestricted internet access powered by ultraviolet technology.</h3>
     </div>
     <div align="center" class="containerz">
+      <i class="fa-solid fa-gamepad fa-3x"></i>
+      <h2>100+ Games</h2>
+      <h3>Extensive collection of popular games ready to play.</h3>
+    </div>
+    <div align="center" class="containerz">
+      <i style="justify-self: center;" class="fa-solid fa-mobile-screen-button fa-3x"></i>
+      <h2>20+ Apps</h2>
+      <h3>Essential apps for your daily needs.</h3>
+    </div>
+    <div align="center" class="containerz">
+      <i class="fa-solid fa-sliders fa-3x"></i>
+      <h2>Customization</h2>
+      <h3>Personalize your experience with custom themes and settings.</h3>
+    </div>
+    <div align="center" class="containerz">
+      <i class="fa-solid fa-code fa-2x"></i>
+      <h2>How do I host astro myself?</h2>
+      <h3>Look at <a href="//docs.galacticnetwork.org" style="color:white;">GN Docs</a> or go to <a href="//github.com/galacticnetwork/astro" style="color:white;">Astro's Github.</a></h3>
+    </div> 
+    <div align="center" class="containerz">
+      <i class="fa-solid fa-shield-halved fa-2x"></i>
+      <h2>What is a proxy?</h2>
+      <h3>A web proxy allows users to browse the internet anonymously by acting as an intermediary between their device and the websites they visit.</h3>
+    </div>
+    <div align="center" class="containerz">
+      <br>
+      <br>
+      <br>
+      <br>
+      <i class="fa-solid fa-heart fa-2x"></i>
+      <h2>How can I contribute to this project?</h2>
+      <h3 style="text-decoration: underline;color:lightgray;">Telling people about astro works, but to really contribute if you love astro, and want private links, join the <a href="//dsc.gg/gnetwork" style="color: white;">Discord</a> and boost the server, or join the discord and cashapp <a style="color:white;">$tether83</a> and post it in media!</h3>
+    </div>
+    <div align="center" class="containerz">
+      <i class="fa-solid fa-rocket fa-2x"></i>
       <h2>What is astro?</h2>
       <h3>Astro is a site that acts as a vpn for websites.</h3>
-    </div>
-    <div align="center" class="containerz">
-      <img style="width:100px;" src="/images/icons/search.png">
-      <br>
-      <h2>Working Proxy</h2>
-      <h3>A working proxy, with the help of ultraviolet, that lets you surf around the internet without restriction.</h3>
-    </div>
-    <div align="center" class="containerz">
-      <img style="width:100px;" src="/images/icons/games.webp">
-      <br>
-      <h2>100 fun games.</h2>
-      <br>
-      <h3>Astro gives you the opportunity to play 100+ games, if you dont like them, you can always just search up a game site.</h3>
-    </div>
-    <div align="center" class="containerz">
-      <img style="width:130px;" src="/images/icons/apps.png">
-      <br>
-      <h2>20+ Apps</h2>
-      <h3>Apps you usually use on a daily basis.</h3>
-    </div>
-    <div align="center" class="containerz">
-      <img style="width:100px;" src="/images/icons/settings.webp">
-      <br>
-      <h2>Customization</h2>
-      <h3>This feature can optomize your experience and make the website feel more like you.</h3>
     </div>
 </center>
 </div>
@@ -172,39 +178,52 @@
         }
 </script>
 <script>
-      // script to generate random greetings
-
-      function changeSub(num) {
-        document.getElementById("subtitle").innerText = say[num];
-      }
-      
-      
-      var say = [];
-      say[0] = "Unblocking, At your fingertips.";
-      say[1] = "Get to gaming on astro!";
-      say[2] = "Watch your favorite movies, on astro.";
-      say[3] = "Use everyday apps on astro.";
-      say[4] = "Use helpful tools, on astro.";
-      say[5] = "Get cheats on astro.";
-      say[6] = "Complete major assignments on astro.";
-      say[7] = "Be free of filters, on astro.";
-      say[8] = "Search anonymously, on astro."
-      
-      
-      // pick a random greeting
-      var howmany = say.length;
-      var bRand = 0;
-      bRand = Math.random();
-      bRand = Math.floor(bRand * howmany);
-      sayWhat = say[bRand];
-      document.getElementById("subtitle").innerText = sayWhat;
-      
-      function changeSplash(num) {
-        document.getElementById("subtitle").innerText = say[num];
-        var ret = "Set current splash to splash " + num + ", " + say[num];
-        return ret;
-      }
-      // credit to 3kh0 for the code :)
+const say = [
+  "Unblocking, At your fingertips.",
+  "Get to gaming on astro!",
+  "Watch your favorite movies, on astro.",
+  "Use everyday apps on astro.",
+  "Use helpful tools, on astro.",
+  "Get cheats on astro.",
+  "Complete major assignments on astro.",
+  "Be free of filters, on astro.",
+  "Search anonymously, on astro."
+];
+let currentPhrase = 0;
+let currentChar = 0;
+let isDeleting = false;
+let isPaused = false;
+const typingSpeed = 100;
+const deleteSpeed = 50;
+const pauseDuration = 2000;
+function typeText() {
+  const subtitle = document.getElementById("subtitle");
+  const currentText = say[currentPhrase];
+  
+  if (!isDeleting && currentChar <= currentText.length) {
+    subtitle.textContent = currentText.substring(0, currentChar);
+    currentChar++;
+    setTimeout(typeText, typingSpeed);
+  } else if (!isDeleting && !isPaused) {
+    isPaused = true;
+    setTimeout(() => {
+      isPaused = false;
+      isDeleting = true;
+      typeText();
+    }, pauseDuration);
+  } else if (isDeleting && currentChar >= 0) {
+    subtitle.textContent = currentText.substring(0, currentChar);
+    currentChar--;
+    setTimeout(typeText, deleteSpeed);
+  } else if (isDeleting && currentChar < 0) {
+    isDeleting = false;
+    currentPhrase = (currentPhrase + 1) % say.length;
+    currentChar = 0;
+    setTimeout(typeText, typingSpeed);
+  }
+}
+// Start the typing animation when the page loads
+window.addEventListener('load', typeText);
 </script>
 	<script>
 		new Ultraviolet.BareClient();
