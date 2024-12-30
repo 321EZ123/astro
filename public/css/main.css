@@ -318,17 +318,35 @@ button:hover {
 
 .containerz {
   background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  padding: 25px;
+  border-radius: 12px;
+  padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 230px;
-  height: 230px;
-  margin: 15px;
+  width: 220px;
+  height: 200px;
+  margin: 10px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerz i {
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.containerz h2 {
+  margin: 5px 0;
+  font-size: 1.4em;
+}
+
+.containerz h3 {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin: 0;
+  text-align: center;
 }
 
 .containerz h3 {
