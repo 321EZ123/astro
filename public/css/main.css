@@ -35,19 +35,18 @@ body {
 
 .navbar {
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  top: 0.1%;
-  backdrop-filter: blur(10px);
+  top: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--navbar);
-  position:fixed;
-  width:100%;
-  border-radius:0px 0px 10px 10px;
-  box-shadow:0px 15px 20px var(--text);
-  border: 0.5 solid #ccc;
-  color:var(--text);
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
 }
 
 input:focus {
@@ -107,19 +106,18 @@ transform:scale(1.1);
 }
 
 input {
-  margin:10px;
-  height: 55px;
-  width: 700px;
-  border: 1px solid var(--text);
-  border-radius: 15px;
-  background-color: transparent;
+  margin: 20px auto;
+  height: 45px;
+  width: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   font-family: 'Be Vietnam Pro', sans-serif;
-  margin: 0 auto;
   outline: none;
   padding: 0 15px;
-  transition:0.5s;
+  transition: all 0.3s ease;
 }
 
 @media (max-width:600px) {
@@ -277,23 +275,22 @@ input {
 
 
 button {
-	width: fit-content;
-  height: 35px;
-	border-radius: 5px;
-	color: var(--text);
-  border-style: none;
-	margin-bottom: 5px;
-	background: var(--btn-accent);
-	cursor: pointer;
-  transition: 0.5s;
+  width: fit-content;
+  height: 38px;
+  border-radius: 6px;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 button:hover {
-    background-color: var(--accent);
-    cursor: pointer;
-    color: white;
-      box-shadow: 0px 15px 20px var(--text);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .alignment {
@@ -315,20 +312,18 @@ button:hover {
 }
 
 .containerz {
-  float:center;
-  background-color: var(--btn-accent);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px var(--secondary-accent);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   width: 230px;
-  height:230px;
-  margin:15px;
-  margin-bottom: 20px;
+  height: 230px;
+  margin: 15px;
   justify-content: center;
   align-items: center;
-  transition: ease 0.5s;
-  display:flex;
-  flex-wrap:wrap;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .containerz h3 {
@@ -542,4 +537,30 @@ input:checked + .slider:before {
   padding: 20px;
   display:flex;
   flex-wrap:wrap;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.search-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.displayimg {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.displayimg:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+  box-shadow: none;
 }
