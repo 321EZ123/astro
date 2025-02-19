@@ -5,7 +5,7 @@
 const stockSW = "../../sw.js";
 
 /**
- * List of hostnames that are allowed to run serviceworkers on http:
+ * List of hostnames that are allowed to run service workers on HTTP:
  */
 const swAllowedHostnames = ["localhost", "127.0.0.1"];
 
@@ -19,7 +19,7 @@ async function registerSW() {
       location.protocol !== "https:" &&
       !swAllowedHostnames.includes(location.hostname)
     )
-      throw new Error("Service workers cannot be registered without https.");
+      throw new Error("Service workers cannot be registered without HTTPS.");
 
     throw new Error("Your browser doesn't support service workers.");
   }
@@ -30,5 +30,5 @@ async function registerSW() {
 
   // Register the EpoxyClient transport to be used for network requests
   let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
-  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
+  BareMux.SetTransport("RemoteTransport", { wisp: wispUrl }); // Use the correct class name
 }
