@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> **this github is archvived**
+> a **NEW** and **BETTER** proxy is coming very soon
 <p align="center"><img src="https://github.com/GalacticNetwork/astro/blob/main/public/images/astro.png?raw=true" height="100">
 </p>
 <h1 align="center">Astro</h1>
